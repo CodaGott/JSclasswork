@@ -1,4 +1,10 @@
-function checkTwoIntergerValues(number1, number2) {
+function checkTwoIntergerValues() {
+    
+const prompt = require("prompt-sync")({signit: true});
+
+number1 = parseInt(prompt("Enter first number: "))
+number2 = parseInt(prompt("Enter second number: "))
+
 sum = number1 + number2;
 
 if (number1 == 50 || number2 == 50){
@@ -15,4 +21,4 @@ else{
     }
 }
 
-checkTwoIntergerValues(45, 20)
+checkTwoIntergerValues()

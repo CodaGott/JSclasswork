@@ -12,6 +12,7 @@
 
 
 function sandwichCalculator(slicesOfBread) {
+    
     let possibleSandwich = slicesOfBread / 2
     console.log("Possible sandwich based of bread provided: ", possibleSandwich)
     return possibleSandwich;

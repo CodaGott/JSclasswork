@@ -1,7 +1,18 @@
 // 2- Write a JavaScript program to check from two given integers,
 // whether one is positive and another one is negative.
 
-function checkNegativeOrPositiveNumber(number1, number2){
+
+
+    
+
+
+function checkNegativeOrPositiveNumber(){
+
+    const prompt = require("prompt-sync")({signit: true});
+
+    number1 = parseInt(prompt("Enter first number: "))
+    number2 = parseInt(prompt("Enter second number: "))
+
     if(number1 >= 0){
         console.log("Number 1 ",number1, " is a positive number")
     }
@@ -16,4 +27,4 @@ function checkNegativeOrPositiveNumber(number1, number2){
 }
 }
 
-checkNegativeOrPositiveNumber(5, -1)
+checkNegativeOrPositiveNumber()

@@ -13,11 +13,11 @@ function areaOfScaleneTriangle() {
     side2 = 6; 
     side3 = 7;
 
-    let s = side1 + side2 + side3 / 2
-    console.log("s", s)
-    var area = s * (s - side1)*(s - side2)*(s - side3)
+    let s = (side1 + side2 + side3) / 2
+    // console.log("s", s)
+    var area = (s * (s - side1)*(s - side2)*(s - side3))
 
-    console.log("Area = ", area)
+    console.log("Area = ", Math.sqrt(area))
 }
 
 // scalene(5, 6, 7)

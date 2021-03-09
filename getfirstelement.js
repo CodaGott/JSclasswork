@@ -1,8 +1,17 @@
-function getfirstelement(params) {
-    let myArray = [7, 3,69,9,6]
-
-    let firstElement = myArray[0]
-    console.log(firstElement)
+function getfirstelement(array, n = 1) {
+    
+    if (array){
+        if (n === 1){
+            return array[0];
+        }
+        else{
+            return array.splice(0, n)
+        }
+    }
+    return array
+    
 }
-
-getfirstelement()
+console.log(getfirstelement([7, 9, 0, -2]))
+console.log(getfirstelement([],3))
+console.log(getfirstelement([7, 9, 0],3))
+console.log(getfirstelement([7, 9, 0, -2],6))

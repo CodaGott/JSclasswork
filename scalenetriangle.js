@@ -9,16 +9,16 @@
 // }
 
 function areaOfScaleneTriangle() {
-    side1 = 5; 
-    side2 = 6; 
-    side3 = 7;
+
+    const prompt = require("prompt-sync")({signit: true});
+
+    side1 = parseInt(prompt("Enter first side: "))
+    side2 = parseInt(prompt("Enter second side: "))
+    side3 = parseInt(prompt("Enter third side: "))
 
     let s = (side1 + side2 + side3) / 2
-    // console.log("s", s)
     var area = (s * (s - side1)*(s - side2)*(s - side3))
 
     console.log("Area = ", Math.sqrt(area))
 }
-
-// scalene(5, 6, 7)
 areaOfScaleneTriangle()
